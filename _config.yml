@@ -321,7 +321,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single # single, posts, home
+      layout: single  # single, posts, home
       classes: wide
       toc: true
       toc_label: "目录"
