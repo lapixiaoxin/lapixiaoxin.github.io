@@ -5,7 +5,7 @@ search: false
 
 @charset "utf-8";
 
-$doc-font-size: 12px;
+$doc-font-size: 13px;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
@@ -14,6 +14,11 @@ $doc-font-size: 12px;
   .no-sidebar.layout--single .page {
     float: none;
     width: 100%;
+  }
+
+  .has-sidebar.layout--single .page,
+  .has-sidebar.layout--single .page__related {
+    padding-inline-end: 0;
   }
 
   .has-sidebar.layout--single .sidebar.sticky .toc .toc__menu {
