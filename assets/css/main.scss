@@ -5,22 +5,22 @@ search: false
 
 @charset "utf-8";
 
-$doc-font-size: 13px;
+$doc-font-size: 12px;
 $max-width: 1400px;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
 .has-sidebar.layout--single .sidebar .toc .nav__title {
-  font-size: 1.05rem;
+  font-size: 1.0rem;
 }
 
 .has-sidebar.layout--single .sidebar .toc__menu {
-  font-size: 0.98rem;
+  font-size: 0.9rem;
 }
 
 .has-sidebar.layout--single .sidebar .toc__menu li {
-  font-size: 0.98rem;
+  font-size: 0.9rem;
 }
 
 .has-sidebar.layout--single .sidebar .toc__menu a {
@@ -40,11 +40,11 @@ $max-width: 1400px;
   }
 
   .has-sidebar.layout--single .sidebar .toc__menu {
-    font-size: 1.02rem;
+    font-size: 1.0rem;
   }
 
   .has-sidebar.layout--single .sidebar .toc__menu li {
-    font-size: 1.02rem;
+    font-size: 1.0rem;
   }
 
   .has-sidebar.layout--single .sidebar.sticky .toc .toc__menu {
