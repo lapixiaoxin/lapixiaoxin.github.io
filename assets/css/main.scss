@@ -5,5 +5,50 @@ search: false
 
 @charset "utf-8";
 
+$doc-font-size: 15px;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+@media (min-width: 1024px) {
+  .no-sidebar.layout--single .page {
+    float: none;
+    width: 100%;
+  }
+
+  .wide.layout--single .page {
+    padding-inline-end: 200px;
+  }
+
+  .wide.layout--single .sidebar__right {
+    position: absolute;
+    top: 0;
+    inset-inline-end: 0;
+    width: 200px;
+    margin-inline-end: -200px;
+    padding-inline-start: 1em;
+    z-index: 10;
+  }
+
+  .wide.layout--single .sidebar__right.sticky {
+    position: sticky;
+    top: 2em;
+    float: inline-end;
+  }
+
+  .wide.layout--single .sidebar__right.sticky .toc .toc__menu {
+    overflow-y: auto;
+    max-height: calc(100vh - 7em);
+  }
+}
+
+@media (min-width: 1280px) {
+  .wide.layout--single .page {
+    padding-inline-end: 300px;
+  }
+
+  .wide.layout--single .sidebar__right {
+    width: 300px;
+    margin-inline-end: -300px;
+  }
+}
