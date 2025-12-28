@@ -6,16 +6,17 @@ search: false
 @charset "utf-8";
 
 $doc-font-size: 13px;
+$max-width: 1600px;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
 .has-sidebar.layout--single .sidebar .toc .nav__title {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
 }
 
 .has-sidebar.layout--single .sidebar .toc__menu {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -30,7 +31,7 @@ $doc-font-size: 13px;
   }
 
   .has-sidebar.layout--single .sidebar .toc__menu {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
   }
 
   .has-sidebar.layout--single .sidebar.sticky .toc .toc__menu {
