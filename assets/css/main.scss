@@ -5,26 +5,26 @@ search: false
 
 @charset "utf-8";
 
-$doc-font-size: 12px;
-$max-width: 1400px;
+$doc-font-size: 13px;
+$max-width: clamp(1100px, 92vw, 1300px);
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
 .has-sidebar.layout--single .sidebar .toc .nav__title {
-  font-size: 1.0rem;
+  font-size: 0.9rem;
 }
 
 .has-sidebar.layout--single .sidebar .toc__menu {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .has-sidebar.layout--single .sidebar .toc__menu li {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .has-sidebar.layout--single .sidebar .toc__menu a {
-  font-size: 1em;
+  font-size: 0.8em;
   line-height: 1.45;
 }
 
@@ -40,11 +40,11 @@ $max-width: 1400px;
   }
 
   .has-sidebar.layout--single .sidebar .toc__menu {
-    font-size: 1.0rem;
+    font-size: 0.8rem;
   }
 
   .has-sidebar.layout--single .sidebar .toc__menu li {
-    font-size: 1.0rem;
+    font-size: 0.8rem;
   }
 
   .has-sidebar.layout--single .sidebar.sticky .toc .toc__menu {
